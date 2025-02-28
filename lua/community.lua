@@ -9,6 +9,8 @@ return {
   { import = "astrocommunity.pack.lua" },
 
   { import = "astrocommunity.pack.java" },
+  { import = "astrocommunity.lsp.nvim-java" },
+  --[[
   {
     "mfussenegger/nvim-jdtls",
     opts = {
@@ -33,7 +35,7 @@ return {
       },
     },
   },
-
+--]]
   {
     "xero/miasma.nvim",
     lazy = false,
