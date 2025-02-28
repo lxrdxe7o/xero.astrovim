@@ -1,6 +1,8 @@
 
 ## 🛠️ Installation
 
+### Dependencies
+
 #### Make a backup of your current nvim and shared folder
 
 ```shell
