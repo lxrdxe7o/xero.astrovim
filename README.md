@@ -1,4 +1,3 @@
-
 ## 🛠️ Installation
 
 ### Dependencies
@@ -11,7 +10,6 @@ mv ~/.local/share/nvim ~/.local/share/nvim.bak
 mv ~/.local/state/nvim ~/.local/state/nvim.bak
 mv ~/.cache/nvim ~/.cache/nvim.bak
 ```
-
 
 ```shell
 git clone https://github.com/lxrdxe7o/xero.astrovim.git ~/.config/nvim
