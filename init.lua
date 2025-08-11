@@ -76,7 +76,7 @@ require("cyberdream").setup {
   },
 }
 
-vim.cmd "colorscheme cyberdream"
+vim.cmd "colorscheme bamboo"
 
 -- Hyprlang LSP
 vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
