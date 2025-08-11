@@ -160,7 +160,7 @@ return {
       require("bamboo").setup {
         -- Main options --
         -- NOTE: to use the light theme, set `vim.o.background = 'light'`
-        style = "vulgaris", -- Choose between 'vulgaris' (regular), 'multiplex' (greener), and 'light'
+        style = "multiplex", -- Choose between 'vulgaris' (regular), 'multiplex' (greener), and 'light'
         toggle_style_key = nil, -- Keybind to toggle theme style. Leave it nil to disable it, or set it to a string, e.g. "<leader>ts"
         toggle_style_list = { "vulgaris", "multiplex", "light" }, -- List of styles to toggle between
         transparent = true, -- Show/hide background
@@ -185,7 +185,7 @@ return {
 
         -- Lualine options --
         lualine = {
-          transparent = false, -- lualine center bar transparency
+          transparent = true, -- lualine center bar transparency
         },
 
         -- Custom Highlights --
@@ -195,11 +195,11 @@ return {
         -- Plugins Config --
         diagnostics = {
           darker = false, -- darker colors for diagnostic
-          undercurl = true, -- use undercurl instead of underline for diagnostics
+          undercurl = false, -- use undercurl instead of underline for diagnostics
           background = true, -- use background color for virtual text
         },
       }
-      -- require("bamboo").load()
+      require("bamboo").load()
     end,
   },
 }

@@ -17,7 +17,7 @@ end
 
 require "lazy_setup"
 require "polish"
-
+--[[
 require("cyberdream").setup {
   -- Set light or dark variant
   variant = "default", -- use "light" for the light variant. Also accepts "auto" to set dark or light colors based on the current value of `vim.o.background`
@@ -75,8 +75,8 @@ require("cyberdream").setup {
     whichkey = true,
   },
 }
-
-vim.cmd "colorscheme bamboo"
+]]
+-- vim.cmd "colorscheme bamboo"
 
 -- Hyprlang LSP
 vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
