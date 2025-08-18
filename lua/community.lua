@@ -9,8 +9,8 @@ return {
   { import = "astrocommunity.pack.lua" },
 
   { import = "astrocommunity.pack.java" },
-  { import = "astrocommunity.lsp.nvim-java" },
-  --[[
+  -- { import = "astrocommunity.lsp.nvim-java" },
+
   {
     "mfussenegger/nvim-jdtls",
     opts = {
@@ -19,8 +19,12 @@ return {
           configuration = {
             runtimes = {
               {
-                name = "JavaSE-23",
-                path = "/usr/lib/jvm/java-23-openjdk/",
+                name = "JavaSE-21",
+                path = "/usr/lib/jvm/java-21-openjdk/",
+              },
+              {
+                name = "JavaSE-17",
+                path = "/usr/lib/jvm/java-17-openjdk/",
               },
             },
           },
@@ -35,7 +39,6 @@ return {
       },
     },
   },
---]]
   {
     "xero/miasma.nvim",
     lazy = false,
