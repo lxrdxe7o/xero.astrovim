@@ -90,3 +90,4 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
     }
   end,
 })
+require("live-server").setup()
