@@ -90,12 +90,3 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
     }
   end,
 })
-require("cmp").setup {
-  -- other setup
-  sources = {
-    { name = "copilot" },
-    { name = "nvim_lsp" },
-    { name = "luasnip" },
-    -- other sources
-  },
-}
