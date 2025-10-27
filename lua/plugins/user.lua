@@ -82,6 +82,7 @@ return {
   -- customize alpha options
   {
     "goolord/alpha-nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = function(_, opts)
       -- customize the dashboard header
       --[=[
@@ -160,6 +161,13 @@ return {
       }
       return opts
     end,
+    require("alpha").setup(require("alpha.themes.dashboard").config),
+  },
+  {
+    "nvzone/typr",
+    dependencies = "nvzone/volt",
+    opts = {},
+    cmd = { "Typr", "TyprStats" },
   },
 
   -- disable default plugins as follows:
